@@ -25,10 +25,10 @@ public class EmployeeController {
 	//search, update and delete operations
 	//get all 
 	
-	@RequestMapping("/Hello")
+	@RequestMapping("/HelloWorld")
 	public String display() {
 		//repository.toString(emp);
-		return "Welcome Springboot";
+		return "Hello world";
 	}
 	
 	@RequestMapping(value="/employees",method =RequestMethod.GET)
