@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: springbooth2example-rs
+  name: dockerexample-rs
   labels:
-    app: springbooth2example
+    app: dockerexample
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: springbooth2example
+      app: dockerexample
   template:
     metadata:
-      name: springbooth2example
+      name: dockerexample
       labels:
-        app: springbooth2example
+        app: dockerexample
     spec:
       containers:
-        - name: springbooth2example
-          image: nam908/java-sp
+        - name: dockerexample
+          image: nam908/docker-demo
           imagePullPolicy: IfNotPresent
       restartPolicy: Always

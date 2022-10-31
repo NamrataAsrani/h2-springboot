@@ -25,12 +25,13 @@ public class EmployeeController {
 	//search, update and delete operations
 	//get all 
 	
-	@RequestMapping("/HelloWorld")
+	@RequestMapping("/")
 	public String display() {
 		//repository.toString(emp);
-		return "Hello world";
+		return "Hello Sprinboot";
 	}
 	
+		
 	@RequestMapping(value="/employees",method =RequestMethod.GET)
 	List<Employee> getEmployee() {
 		return repository.findAll();
